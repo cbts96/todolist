@@ -4,7 +4,7 @@ var initialstate= data ? data: []
 var myreducer=(state=initialstate,action)=>{
     switch(action.type){
         case types.list_all:
-            return state;
+            return [...state];
         default: return state;
     }
     
